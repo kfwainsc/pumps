@@ -5,15 +5,14 @@
 */
 import React from "react";
 import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
 import {BrowserRouter} from "react-router-dom";
 //components
 import App from "./App/App";
 //bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 //styles
-//import "./index.css";
-
-import reportWebVitals from "./reportWebVitals";
+import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

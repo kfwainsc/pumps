@@ -1,0 +1,38 @@
+/*** Stylesheet index.css ***/
+/* Project: Pump Panel Simulator
+   Descript: Training tool to assist in learing 
+   Created: Kendra Wainscott  2022
+
+   Style Sheet for whole app INDEX
+   Organized by major section, then alphabetically
+*/
+/************* UNIVERSAL *********************************/
+:root {
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 12px;
+  background-color: var(--black);
+}
+@media only screen and (max-width: 330px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+}
+body {
+  font-family: sans-serif, monospace;
+}
+/*.nav-link {
+  text-decoration: none;
+}
+*/

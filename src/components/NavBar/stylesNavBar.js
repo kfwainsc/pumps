@@ -6,10 +6,11 @@
    Styles for NavBar Component
    Organized by major section, then alphabetically
 */
-const logo = {
+import {colorPaletteMaster as c} from "../../colorPaletteMaster";
+/*const logo = {
   maxWidth: "5rem",
   filter: "opacity(.4)",
-};
+};*/
 const navContainer = {
   margin: "1rem 0 0 0",
   display: "flex",
@@ -19,12 +20,8 @@ const navContainer = {
 };
 const navLink = {
   margin: "1rem",
-};
-const navLinkHome = {
-  margin: "0 1.5rem 0 0",
-  display: "flex",
-  alignItems: "center",
-  backgroundColor: "transparent",
+  textDecoration: "none",
+  color: c.black,
 };
 const ul = {
   display: "flex",
@@ -32,9 +29,8 @@ const ul = {
   justifyContent: "space-between",
 };
 export const navBarStyles = {
-  logo: logo,
+  //logo: logo,
   navContainer: navContainer,
   navLink: navLink,
-  navLinkHome: navLinkHome,
   ul: ul,
 };

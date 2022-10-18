@@ -20,11 +20,19 @@ export function NavBar() {
   };
 
   return (
-    <div>
-      <ul>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/">Governor Prototype</NavLink>
-        <NavLink to="/">In Cab Checklist</NavLink>
+    <div style={styles.navContainer}>
+      <ul style={styles.ul}>
+        <NavLink to="/" style={styles.navLink}>
+          Home
+        </NavLink>
+        <NavDropdown title="Menu" id="basic-nav-dropdown" style={styles.navLink}>
+          <NavDropdown.Item key={"governor"} href="/" style={styles.navLink}>
+            Prototype Governor
+          </NavDropdown.Item>
+          <NavDropdown.Item key={"inCabChecklist"} href="/inCabChecklist" style={styles.navLink}>
+            In Cab Checklist
+          </NavDropdown.Item>
+        </NavDropdown>
       </ul>
     </div>
   );

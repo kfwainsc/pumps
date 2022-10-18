@@ -5,16 +5,18 @@
 */
 import {Routes, Route} from "react-router-dom";
 //components
-import {NavBar} from "../components/NavBar/NavBar.js";
-import {InCab} from "../components/InCab/InCab.js";
+import {NavBar} from "../components/NavBar/NavBar";
+import {InCab} from "../components/InCab/InCab";
+//pages
+import {LandingPage} from "../pages/LandingPage/LandingPage";
 //styles
-//import {appStyles as styles} from "./stylesApp.js";
+import {appStyles as styles} from "./stylesApp.js";
 function App() {
   return (
-    <div>
+    <div style={styles.app}>
       <NavBar />
       <Routes>
-        <Route path="/" element={<landingPage />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/inCabCheckList" element={<InCab />} />
       </Routes>
     </div>
