@@ -3,24 +3,48 @@
    Descript: Training tool to assist in learing 
    Created: Kendra Wainscott  2022
 */
+import React, {useState} from "react";
 import {Routes, Route} from "react-router-dom";
 //components
-import {NavBar} from "../components/NavBar/NavBar";
+import {HookUps} from "../components/HookUps/HookUps";
 import {InCab} from "../components/InCab/InCab";
+import {NavBar} from "../components/NavBar/NavBar";
 //pages
 import {LandingPage} from "../pages/LandingPage/LandingPage";
+import {PanelPage} from "../pages/PanelPage/PanelPage";
 //styles
 import {appStyles as styles} from "./stylesApp.js";
+
 function App() {
   return (
     <div style={styles.app}>
       <NavBar />
+
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/inCabCheckList" element={<InCab />} />
+        <Route path="/panelPage" element={<PanelPage />} />
       </Routes>
     </div>
   );
 }
 
 export default App;
+
+/*
+  const [test, setTest] = useState(0);
+  function plusPlus() {
+    setTest(test + 1);
+  }
+  function larger() {
+    plusPlus();
+    console.log(test);
+  }
+
+
+      <button onClick={larger} style={{backgroundColor: "black"}}>
+        <HookUps test={test} />
+      </button>
+
+
+*/

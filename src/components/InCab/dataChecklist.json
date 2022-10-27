@@ -3,12 +3,24 @@
   "Project": "Pump Panel Simulator",
   "Descript": "Training tool to assist in learing",
   "Created": "Kendra Wainscott 2022",
-  "inCabChecklist": [
-    "put apparatus in PARK",
-    "put in NEUTRAL",
-    "pull pump lever/knob",
-    "put in DRIVE",
-    "confirm 'OK TO PUMP' light in cab is illuminated"
-  ],
-  "exitingApparatus": ["don PPE", "check traffic", "chalk wheels", "accountability "]
+  "lists": [
+    {
+      "listHeader": "in cab checklist",
+      "listItems": [
+        "put apparatus in PARK",
+        "put in NEUTRAL",
+        "pull pump lever/knob",
+        "put in DRIVE",
+        "confirm 'OK TO PUMP' light in cab is illuminated"
+      ]
+    },
+    {
+      "listHeader": "exiting aparatus",
+      "listItems": ["don PPE", "check traffic", "accountability", "chock aparatus wheels"]
+    },
+    {
+      "listHeader": "begin pumping",
+      "listItems": []
+    }
+  ]
 }

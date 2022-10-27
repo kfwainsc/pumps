@@ -6,24 +6,30 @@
    Styles for NavBar Component
    Organized by major section, then alphabetically
 */
-import {colorPaletteMaster as c} from "../../colorPaletteMaster";
+import {masterStyles} from "../../masterStyles";
+const c = masterStyles.colorPalette;
+const f = masterStyles.fontList;
+
 /*const logo = {
   maxWidth: "5rem",
   filter: "opacity(.4)",
 };*/
 const navContainer = {
-  margin: "1rem 0 0 0",
+  width: "100%",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  borderBottom: `.5rem dotted ${c.grayDark}`,
   fontSize: "2rem",
 };
 const navLink = {
   margin: "1rem",
   textDecoration: "none",
-  color: c.black,
+  color: c.grayDark,
 };
 const ul = {
+  margin: 0,
+  padding: 0,
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",

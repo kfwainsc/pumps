@@ -7,11 +7,12 @@
 import React from "react";
 //components
 //styles
+import {landingPageStyles as s} from "./stylesLandingPage";
 
 export function LandingPage() {
   return (
-    <div>
-      <h1>LANDING PG</h1>
+    <div style={s.landingContain}>
+      <h1 style={s.h1}>pump panel simulator</h1>
     </div>
   );
 }

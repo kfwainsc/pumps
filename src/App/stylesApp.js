@@ -6,10 +6,16 @@
    Styles for APP
    Organized by major section, then alphabetically
 */
-import {colorPaletteMaster as c} from "../colorPaletteMaster";
+import {masterStyles} from "../masterStyles";
+const c = masterStyles.colorPalette;
+
 const app = {
   minHeight: "100vh",
-  backgroundColor: c.gray,
+  minWidth: "100%",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  backgroundColor: c.grayGreen,
   color: c.white,
 };
 export const appStyles = {

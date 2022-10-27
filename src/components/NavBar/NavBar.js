@@ -5,9 +5,9 @@
 */
 import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
+import NavDropdown from "react-bootstrap/NavDropdown";
 //styles
 import {navBarStyles as styles} from "./stylesNavBar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 //const logo = require("./tempLogo.jpg");
 
 export function NavBar() {
@@ -26,7 +26,11 @@ export function NavBar() {
           Home
         </NavLink>
         <NavDropdown title="Menu" id="basic-nav-dropdown" style={styles.navLink}>
-          <NavDropdown.Item key={"governor"} href="/" style={styles.navLink}>
+          <NavDropdown.Item
+            key={"governor"}
+            href="https://govenor0proto.netlify.app/"
+            style={styles.navLink}
+          >
             Prototype Governor
           </NavDropdown.Item>
           <NavDropdown.Item key={"inCabChecklist"} href="/inCabChecklist" style={styles.navLink}>
