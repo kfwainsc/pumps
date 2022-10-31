@@ -7,7 +7,7 @@ import React, {useState} from "react";
 //components
 import {ValveDial} from "../../components/ValveDial/ValveDial";
 //styles
-import {panelStyles as s} from "./stylesPanelPage";
+import {panelPageStyles as s} from "./stylesPanelPage";
 import "./panelPage.css";
 //data lists
 const valveListData = require("../../components/ValveDial/valveList.json");
@@ -17,17 +17,19 @@ export function PanelPage() {
   //console.log(valveList);
 
   return (
-    <div className="valve-grid">
-      {valveList.map((valve, index) => (
-        <ValveDial
-          key={`${valve.label1}${index}`}
-          vID={`${valve.label1}${index}`}
-          label1={valve.label1}
-          label2={valve.label2}
-          color={valve.color}
-          initPressure={valve.preset}
-        />
-      ))}
+    <div style={s.stainlessContain}>
+      <div className="valve-grid">
+        {valveList.map((valve, index) => (
+          <ValveDial
+            key={`${valve.label1}${index}`}
+            vID={`${valve.label1}${index}`}
+            label1={valve.label1}
+            label2={valve.label2}
+            color={valve.color}
+            initPressure={valve.preset}
+          />
+        ))}
+      </div>
     </div>
   );
 }

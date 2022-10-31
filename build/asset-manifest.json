@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e0d9901e.css",
+    "main.js": "/static/js/main.3067bb1c.js",
+    "static/js/787.ca029e3b.chunk.js": "/static/js/787.ca029e3b.chunk.js",
+    "static/media/maltCross1_OPACITY.png": "/static/media/maltCross1_OPACITY.ce6ed82319c7bbcd0fef.png",
+    "static/media/blkMetal.jpg": "/static/media/blkMetal.3a544d309dbc7456419f.jpg",
+    "static/media/graphPaper.png": "/static/media/graphPaper.083d96e72d404b4e81c0.png",
+    "static/media/stainlessSteel.jpg": "/static/media/stainlessSteel.1f5aa39d595e24706339.jpg",
+    "static/media/digital-7.regular.ttf": "/static/media/digital-7.regular.93911ab167c943140756.ttf",
+    "static/media/screw.png": "/static/media/screw.146440fa64166e4ebde7.png",
+    "static/media/notePadRingsCOLOR.png": "/static/media/notePadRingsCOLOR.06afc0a6c6ae82a06052.png",
+    "index.html": "/index.html",
+    "main.e0d9901e.css.map": "/static/css/main.e0d9901e.css.map",
+    "main.3067bb1c.js.map": "/static/js/main.3067bb1c.js.map",
+    "787.ca029e3b.chunk.js.map": "/static/js/787.ca029e3b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0d9901e.css",
+    "static/js/main.3067bb1c.js"
+  ]
+}

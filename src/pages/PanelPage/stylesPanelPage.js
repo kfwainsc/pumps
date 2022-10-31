@@ -9,3 +9,13 @@
 import {masterStyles} from "../../masterStyles";
 const c = masterStyles.colorPalette;
 const f = masterStyles.fontList;
+
+const stainlessContain = {
+  padding: "2rem",
+  backgroundImage: `url(${require("../../images/stainlessSteel.jpg")})`,
+  //backgroundSize: "cover",
+};
+
+export const panelPageStyles = {
+  stainlessContain: stainlessContain,
+};
