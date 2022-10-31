@@ -16,7 +16,13 @@
     },
     {
       "listHeader": "exiting aparatus",
-      "listItems": ["don PPE", "check traffic", "accountability", "chock aparatus wheels"]
+      "listItems": [
+        "don PPE",
+        "check traffic",
+        "accountability",
+        "chock aparatus wheels",
+        "confirm 'OK TO PUMP' light on panel is illuminated"
+      ]
     },
     {
       "listHeader": "begin pumping",

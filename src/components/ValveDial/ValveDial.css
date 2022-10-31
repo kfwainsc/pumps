@@ -1,0 +1,40 @@
+/***  valveDial.css ***/
+/* Project: Pump Panel Simulator
+   Descript: Training tool to assist in learing 
+   Created: Kendra Wainscott  2022
+
+   CSS Styles for ValveDial Component
+   Organized by major section, then alphabetically
+*/
+button {
+  padding: 0;
+}
+.btn-valve-control {
+  margin: 0 1em;
+  padding: 0.5em 0.5em;
+  border: 0.3em var(--white) solid;
+  border-radius: 0.2em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.btn-valve-control:hover {
+  filter: contrast(2);
+}
+.flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.valve-label-contain {
+  margin: 0.5em;
+  border: 0.5em outset var(--black);
+  border-radius: 0.5em;
+}

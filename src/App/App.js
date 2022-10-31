@@ -22,8 +22,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/inCabCheckList" element={<InCab />} />
-        <Route path="/panelPage" element={<PanelPage />} />
+        <Route path="/check_list" element={<InCab />} />
+        <Route path="/panel_page" element={<PanelPage />} />
       </Routes>
     </div>
   );

@@ -66,7 +66,7 @@ export function InCab() {
       <div style={s.listContain}>
         <h1 style={s.h1}>{listHeader}:</h1>
         {toStart ? (
-          <NavLink to="/panelPage">
+          <NavLink to="/panel_page">
             <button style={s.startBtn}>Load Pump Panel</button>
           </NavLink>
         ) : (

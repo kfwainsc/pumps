@@ -9,11 +9,20 @@
 /************* UNIVERSAL *********************************/
 :root {
   --black: rgb(0, 0, 0);
+  --gray-light: rgba(210, 211, 213);
+  --red-dark: rgba(68, 14, 14);
   --white: rgb(255, 255, 255);
 }
-* {
+@font-face {
+  font-family: "digital-7";
+  src: url("digital-7.regular.ttf");
+}
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 html {
   font-size: 12px;

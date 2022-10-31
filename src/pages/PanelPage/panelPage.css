@@ -1,0 +1,20 @@
+/***  panelPage.css ***/
+/* Project: Pump Panel Simulator
+   Descript: Training tool to assist in learing 
+   Created: Kendra Wainscott  2022
+
+   CSS Styles for Panel Page page
+   Organized by major section, then alphabetically
+*/
+.valve-grid {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+}
+@media only screen and (max-width: 500px) {
+  .valve-grid {
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 1rem;
+  }
+}

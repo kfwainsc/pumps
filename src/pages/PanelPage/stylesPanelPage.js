@@ -1,10 +1,10 @@
-/***  stylesValveDial.js ***/
+/***  stylesPanelPage.js ***/
 /* Project: Pump Panel Simulator
    Descript: Training tool to assist in learing 
    Created: Kendra Wainscott  2022
 
-   Styles for ValveDial Component
-   Organized by major section, then alphabetically
+   Styles for Panel Page page 
+   Organized alphabetically
 */
 import {masterStyles} from "../../masterStyles";
 const c = masterStyles.colorPalette;

@@ -4,20 +4,44 @@
    Created: Kendra Wainscott  2022
 */
 import React, {useState} from "react";
-import {ValveDial} from "../../components/valveDial/ValveDial";
+//components
+import {ValveDial} from "../../components/ValveDial/ValveDial";
+//styles
+import {panelStyles as s} from "./stylesPanelPage";
+import "./panelPage.css";
+//data lists
+const valveListData = require("../../components/ValveDial/valveList.json");
+const valveList = valveListData.valveList;
 
 export function PanelPage() {
+  //console.log(valveList);
+
   return (
-    <div>
-      <ValveDial label="font cross lay" />
-      <ValveDial label="rear cross lay" />
+    <div className="valve-grid">
+      {valveList.map((valve, index) => (
+        <ValveDial
+          key={`${valve.label1}${index}`}
+          vID={`${valve.label1}${index}`}
+          label1={valve.label1}
+          label2={valve.label2}
+          color={valve.color}
+          initPressure={valve.preset}
+        />
+      ))}
     </div>
   );
 }
 /*
+        <ValveDial vID={valve.label} label={"hafjk f fs "} colors={"white"} initPressure={100} />;
+
       <img
         src={require("../../images/panelPhoto.jpg")}
         alt="pump panel"
         style={{maxWidth: "10rem", margin: "1rem"}}
       />
+*/
+/*
+        console.log(typeof valve.color);
+        console.log(typeof valve.label);
+        console.log(typeof valve.preset);
 */

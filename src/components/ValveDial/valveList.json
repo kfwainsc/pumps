@@ -1,0 +1,56 @@
+{
+  "FileName": "valveList.json",
+  "Project": "Pump Panel Simulator",
+  "Descript": "Training tool to assist in learing",
+  "Created": "Kendra Wainscott 2022",
+  "valveList": [
+    {
+      "label1": "front crosslay",
+      "label2": "w/foam",
+      "color": "orange",
+      "preset": 140
+    },
+    {
+      "label1": "rear crosslay",
+      "label2": "w/foam",
+      "color": "red",
+      "preset": 140
+    },
+    {
+      "label1": "no. 3",
+      "label2": "2 1/2'' discharge",
+      "color": "brown",
+      "preset": 0
+    },
+    {
+      "label1": "deluge",
+      "label2": "",
+      "color": "rgb(161,61,45)",
+      "preset": 80
+    },
+    {
+      "label1": "booster reeel",
+      "label2": "w/foam",
+      "color": "white",
+      "preset": 0
+    },
+    {
+      "label1": "no. 4",
+      "label2": "2 1/2'' discharge",
+      "color": "green",
+      "preset": 0
+    },
+    {
+      "label1": "rear 2 1/2'' discharge",
+      "label2": "w/foam",
+      "color": "black",
+      "preset": 0
+    },
+    {
+      "label1": "right rear 1 1/2''",
+      "label2": "preconnect",
+      "color": "yellow",
+      "preset": 120
+    }
+  ]
+}
