@@ -12,9 +12,14 @@
   grid-template-rows: auto;
   grid-gap: 1rem;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .valve-grid {
     grid-template-columns: repeat(6, auto);
+  }
+}
+@media only screen and (max-width: 800px) {
+  .valve-grid {
+    grid-template-columns: repeat(4, auto);
   }
 }
 @media only screen and (max-width: 500px) {

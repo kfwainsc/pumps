@@ -11,7 +11,7 @@ const c = masterStyles.colorPalette;
 const f = masterStyles.fontList;
 
 const stainlessContain = {
-  padding: "2rem",
+  padding: "3rem",
   backgroundImage: `url(${require("../../images/stainlessSteel.jpg")})`,
   //backgroundSize: "cover",
 };

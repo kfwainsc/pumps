@@ -5,6 +5,7 @@
 */
 import React, {useState} from "react";
 //components
+import {HookUps} from "../../components/HookUps/HookUps";
 import {ValveDial} from "../../components/ValveDial/ValveDial";
 //styles
 import {panelPageStyles as s} from "./stylesPanelPage";
@@ -19,7 +20,7 @@ export function PanelPage() {
   return (
     <div style={s.stainlessContain}>
       <div className="valve-grid">
-        {valveList.map((valve, index) => (
+        {valveList.row1.map((valve, index) => (
           <ValveDial
             key={`${valve.label1}${index}`}
             vID={`${valve.label1}${index}`}
@@ -29,6 +30,34 @@ export function PanelPage() {
             initPressure={valve.preset}
           />
         ))}
+      </div>
+      <div className="flex">
+        <div className="valve-grid">
+          {valveList.row2A.map((valve, index) => (
+            <ValveDial
+              key={`${valve.label1}${index}`}
+              vID={`${valve.label1}${index}`}
+              label1={valve.label1}
+              label2={valve.label2}
+              color={valve.color}
+              initPressure={valve.preset}
+            />
+          ))}
+        </div>
+        <HookUps isHooked={false} />
+        <HookUps isHooked={false} />
+        <div className="valve-grid">
+          {valveList.row2B.map((valve, index) => (
+            <ValveDial
+              key={`${valve.label1}${index}`}
+              vID={`${valve.label1}${index}`}
+              label1={valve.label1}
+              label2={valve.label2}
+              color={valve.color}
+              initPressure={valve.preset}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
