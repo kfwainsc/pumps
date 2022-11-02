@@ -6,6 +6,12 @@
    CSS Styles for Panel Page page
    Organized by major section, then alphabetically
 */
+.temp {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+}
 .valve-grid {
   display: grid;
   grid-template-columns: repeat(8, auto);
@@ -16,14 +22,23 @@
   .valve-grid {
     grid-template-columns: repeat(6, auto);
   }
+  .temp {
+    grid-template-columns: repeat(3, auto);
+  }
 }
 @media only screen and (max-width: 800px) {
   .valve-grid {
     grid-template-columns: repeat(4, auto);
   }
+  .temp {
+    grid-template-columns: repeat(2, auto);
+  }
 }
 @media only screen and (max-width: 500px) {
   .valve-grid {
     grid-template-columns: repeat(2, auto);
+  }
+  .temp {
+    grid-template-columns: repeat(1, auto);
   }
 }

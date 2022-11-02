@@ -31,7 +31,7 @@ export function PanelPage() {
           />
         ))}
       </div>
-      <div className="flex">
+      <div className="flex temp">
         <div className="valve-grid">
           {valveList.row2A.map((valve, index) => (
             <ValveDial
@@ -44,8 +44,10 @@ export function PanelPage() {
             />
           ))}
         </div>
-        <HookUps isHooked={false} />
-        <HookUps isHooked={false} />
+        <div className="flex">
+          <HookUps isHooked={false} />
+          <HookUps isHooked={false} />
+        </div>
         <div className="valve-grid">
           {valveList.row2B.map((valve, index) => (
             <ValveDial
