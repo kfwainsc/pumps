@@ -13,6 +13,7 @@ export function LandingPage() {
   return (
     <div style={s.landingContain}>
       <h1 style={s.h1}>pump panel simulator</h1>
+      <button>start</button>
     </div>
   );
 }

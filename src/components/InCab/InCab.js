@@ -71,8 +71,8 @@ export function InCab() {
           </NavLink>
         ) : (
           <ul style={s.list}>
-            {checklist.map((item) => (
-              <li key={item} style={s.listItem}>
+            {checklist.map((item, index) => (
+              <li key={`${item}${index}`} style={s.listItem}>
                 <label style={s.checkItem} htmlFor={item}>
                   <input
                     onChange={handleCheck}

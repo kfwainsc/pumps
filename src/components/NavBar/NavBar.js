@@ -26,14 +26,14 @@ export function NavBar() {
           Home
         </NavLink>
         <NavDropdown title="Menu" id="basic-nav-dropdown" style={styles.navLink}>
-          <NavDropdown.Item key={"checklist"} href="/check_list" style={styles.navLink}>
+          <NavDropdown.Item key={"dropdown_checklist"} href="/check_list" style={styles.navLink}>
             Pre-Pump Checklist
           </NavDropdown.Item>
-          <NavDropdown.Item key={"checklist"} href="/panel_page" style={styles.navLink}>
+          <NavDropdown.Item key={"dropdown_panelpage"} href="/panel_page" style={styles.navLink}>
             Full Pump Panel
           </NavDropdown.Item>
           <NavDropdown.Item
-            key={"governor"}
+            key={"dropdown_governor"}
             href="https://govenor0proto.netlify.app/"
             style={styles.navLink}
           >

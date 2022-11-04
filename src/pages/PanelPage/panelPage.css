@@ -19,26 +19,34 @@
   grid-gap: 1rem;
 }
 @media only screen and (max-width: 1000px) {
-  .valve-grid {
-    grid-template-columns: repeat(6, auto);
-  }
   .temp {
     grid-template-columns: repeat(3, auto);
   }
+  .valve-grid {
+    grid-template-columns: repeat(6, auto);
+  }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
+  .temp {
+    grid-template-columns: repeat(2, auto);
+  }
   .valve-grid {
     grid-template-columns: repeat(4, auto);
   }
+}
+@media only screen and (max-width: 700px) {
   .temp {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(1, auto);
+  }
+  .valve-grid {
+    grid-template-columns: repeat(3, auto);
   }
 }
 @media only screen and (max-width: 500px) {
-  .valve-grid {
-    grid-template-columns: repeat(2, auto);
-  }
   .temp {
     grid-template-columns: repeat(1, auto);
+  }
+  .valve-grid {
+    grid-template-columns: repeat(2, auto);
   }
 }
