@@ -46,7 +46,7 @@ const startBtnH2 = {
 };
 const startBtnImg = {
   width: "15rem",
-  filter: "opacity(.7)",
+  filter: "opacity(1)",
   backgroundColor: "transparent",
 };
 export const landingPageStyles = {

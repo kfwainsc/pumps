@@ -8,7 +8,7 @@ import {NavLink} from "react-router-dom";
 import NavDropdown from "react-bootstrap/NavDropdown";
 //styles
 import {navBarStyles as styles} from "./stylesNavBar";
-//const logo = require("./tempLogo.jpg");
+import "./NavBar.css";
 
 export function NavBar() {
   const [isHovering, setIsHovering] = useState(false);
@@ -26,16 +26,24 @@ export function NavBar() {
           Home
         </NavLink>
         <NavDropdown title="Menu" id="basic-nav-dropdown" style={styles.navLink}>
-          <NavDropdown.Item key={"dropdown_checklist"} href="/check_list" style={styles.navLink}>
+          <NavDropdown.Item
+            key={"dropdown_checklist"}
+            href="/check_list"
+            style={styles.navDropdownItem}
+          >
             Pre-Pump Checklist
           </NavDropdown.Item>
-          <NavDropdown.Item key={"dropdown_panelpage"} href="/panel_page" style={styles.navLink}>
+          <NavDropdown.Item
+            key={"dropdown_panelpage"}
+            href="/panel_page"
+            style={styles.navDropdownItem}
+          >
             Full Pump Panel
           </NavDropdown.Item>
           <NavDropdown.Item
             key={"dropdown_governor"}
             href="https://govenor0proto.netlify.app/"
-            style={styles.navLink}
+            style={styles.navDropdownItem}
           >
             Prototype Governor
           </NavDropdown.Item>

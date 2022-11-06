@@ -20,7 +20,7 @@
 }
 @media only screen and (max-width: 1000px) {
   .temp {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
   }
   .valve-grid {
     grid-template-columns: repeat(6, auto);

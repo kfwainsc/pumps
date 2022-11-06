@@ -22,9 +22,24 @@ const navContainer = {
   borderBottom: `.5rem solid ${c.grayDark}`,
   fontSize: "2rem",
 };
-const navLink = {
+const navDropdown = {
+  border: `${c.grayDark} .5rem solid`,
+  backgroundColor: c.grayGreen,
   margin: "1rem",
   textDecoration: "none",
+  textShadow: `0 -1px 0 ${c.pinkLightFade}`,
+  color: c.grayDark,
+};
+const navDropdownItem = {
+  fontSize: "1.5rem",
+  textShadow: "none",
+};
+const navLink = {
+  margin: "1rem",
+  fontSize: "2.25rem",
+  fontWeight: 600,
+  textDecoration: "none",
+  textShadow: `0 -1px 0 ${c.pinkLightFade}`,
   color: c.grayDark,
 };
 const ul = {
@@ -37,6 +52,8 @@ const ul = {
 export const navBarStyles = {
   //logo: logo,
   navContainer: navContainer,
+  navDropdown: navDropdown,
+  navDropdownItem: navDropdownItem,
   navLink: navLink,
   ul: ul,
 };
