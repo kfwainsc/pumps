@@ -19,7 +19,7 @@ const navContainer = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  borderBottom: `.5rem dotted ${c.grayDark}`,
+  borderBottom: `.5rem solid ${c.grayDark}`,
   fontSize: "2rem",
 };
 const navLink = {
