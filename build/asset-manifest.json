@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.9dcdec2d.css",
-    "main.js": "/static/js/main.01bcf5de.js",
+    "main.css": "/static/css/main.f95925cb.css",
+    "main.js": "/static/js/main.f19d867e.js",
     "static/js/787.ca029e3b.chunk.js": "/static/js/787.ca029e3b.chunk.js",
     "static/media/hookupHose.png": "/static/media/hookupHose.2f5f7e2b436ff127cfdf.png",
-    "static/media/maltCross1_OPACITY.png": "/static/media/maltCross1_OPACITY.ce6ed82319c7bbcd0fef.png",
+    "static/media/maltCross1.png": "/static/media/maltCross1.a0eeae81fc3dbcabc9b6.png",
     "static/media/hookupCap2.png": "/static/media/hookupCap2.ef1cebc4100c990ac06a.png",
     "static/media/blkMetal.jpg": "/static/media/blkMetal.3a544d309dbc7456419f.jpg",
     "static/media/graphPaper.png": "/static/media/graphPaper.083d96e72d404b4e81c0.png",
@@ -13,12 +13,12 @@
     "static/media/screw.png": "/static/media/screw.146440fa64166e4ebde7.png",
     "static/media/notePadRingsCOLOR.png": "/static/media/notePadRingsCOLOR.06afc0a6c6ae82a06052.png",
     "index.html": "/index.html",
-    "main.9dcdec2d.css.map": "/static/css/main.9dcdec2d.css.map",
-    "main.01bcf5de.js.map": "/static/js/main.01bcf5de.js.map",
+    "main.f95925cb.css.map": "/static/css/main.f95925cb.css.map",
+    "main.f19d867e.js.map": "/static/js/main.f19d867e.js.map",
     "787.ca029e3b.chunk.js.map": "/static/js/787.ca029e3b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9dcdec2d.css",
-    "static/js/main.01bcf5de.js"
+    "static/css/main.f95925cb.css",
+    "static/js/main.f19d867e.js"
   ]
 }
