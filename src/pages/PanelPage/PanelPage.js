@@ -6,6 +6,7 @@
 import React, {useState} from "react";
 //components
 import {HookUps} from "../../components/HookUps/HookUps";
+import {IndicationLight} from "../../components/IndicationLight/IndicationLight";
 import {ValveDial} from "../../components/ValveDial/ValveDial";
 //styles
 import {panelPageStyles as s} from "./stylesPanelPage";
@@ -19,6 +20,11 @@ export function PanelPage() {
 
   return (
     <div style={s.stainlessContain}>
+      <div className="flex">
+        <IndicationLight label={"stuff"} />
+        <IndicationLight label={"stuff"} />
+        <IndicationLight label={"stuff"} />
+      </div>
       <div className="valve-grid">
         {valveList.row1.map((valve, index) => (
           <ValveDial
