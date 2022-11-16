@@ -1,0 +1,38 @@
+{
+  "FileName": "blackBtnList.json",
+  "Project": "Pump Panel Simulator",
+  "Descript": "Training tool to assist in learing",
+  "Created": "Kendra Wainscott 2022",
+  "btnList": {
+    "booster": {
+      "label": {
+        "line1": "booster reel",
+        "line2": "rewind",
+        "borderColor": "white"
+      }
+    },
+    "rowOf3": [
+      {
+        "label": {
+          "line1": "left",
+          "line2": "scene light",
+          "borderColor": "black"
+        }
+      },
+      {
+        "label": {
+          "line1": "panel",
+          "line2": "light",
+          "borderColor": "black"
+        }
+      },
+      {
+        "label": {
+          "line1": "right",
+          "line2": "scene light",
+          "borderColor": "black"
+        }
+      }
+    ]
+  }
+}

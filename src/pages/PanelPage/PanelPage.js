@@ -4,48 +4,77 @@
    Created: Kendra Wainscott  2022
 */
 import React, {useState} from "react";
+import {Link} from "react-router-dom";
+
 //components
+import {BlackBtn} from "../../components/BlackBtn/BlackBtn";
+import {Governor} from "../../components/Governor/Governor";
 import {HookUps} from "../../components/HookUps/HookUps";
-import {IndicationLight} from "../../components/IndicationLight/IndicationLight";
+import {NeedleGauge} from "../../components/NeedleGauge/NeedleGauge";
 import {ValveDial} from "../../components/ValveDial/ValveDial";
+
 //styles
 import {panelPageStyles as s} from "./stylesPanelPage";
 import "./panelPage.css";
+
 //data lists
+import {needleGaugeList} from "../../components/NeedleGauge/needleGaugeList";
+const blackBtnData = require("../../components/BlackBtn/blackBtnList.json");
+const blackBtnList = blackBtnData.btnList;
 const valveListData = require("../../components/ValveDial/valveList.json");
 const valveList = valveListData.valveList;
 
 export function PanelPage() {
-  //console.log(valveList);
-
   return (
     <div style={s.stainlessContain}>
-      <div className="flex">
-        <IndicationLight label={"stuff"} />
-        <IndicationLight label={"stuff"} />
-        <IndicationLight label={"stuff"} />
+      <div className="temp-top-row">
+        <BlackBtn
+          id={`btnID${blackBtnList.booster.label.line1}`}
+          label={blackBtnList.booster.label}
+        />
+        <a className="temp-gov" target="_blank" href="https://govenor0proto.netlify.app/">
+          <img src={require("../../images/governor_imgs/govPreview.png")} />
+        </a>
+        <div>
+          <div className="flex">
+            {needleGaugeList.map((gauge, index) => (
+              <NeedleGauge
+                id={`needleGaugeID${gauge.label.line1}${index}`}
+                key={`needleGaugeKEY${gauge.label.line1}${index}`}
+                src={gauge.src}
+                label={gauge.label}
+              />
+            ))}
+          </div>
+
+          <div style={s.blackBtnsContain}>
+            {blackBtnList.rowOf3.map((btn, index) => (
+              <BlackBtn
+                id={`btnID${btn.label.line1}${index}`}
+                key={`${btn.label.line1}${index}`}
+                label={btn.label}
+              />
+            ))}
+          </div>
+        </div>
       </div>
       <div className="valve-grid">
         {valveList.row1.map((valve, index) => (
           <ValveDial
-            key={`${valve.label1}${index}`}
-            vID={`${valve.label1}${index}`}
-            label1={valve.label1}
-            label2={valve.label2}
-            color={valve.color}
+            key={`${valve.label.line1}${index}`}
+            id={`vID${valve.label.line1}${index}`}
+            label={valve.label}
             initPressure={valve.preset}
           />
         ))}
       </div>
-      <div className="flex temp">
+      <div className="temp">
         <div className="valve-grid">
           {valveList.row2A.map((valve, index) => (
             <ValveDial
-              key={`${valve.label1}${index}`}
-              vID={`${valve.label1}${index}`}
-              label1={valve.label1}
-              label2={valve.label2}
-              color={valve.color}
+              key={`${valve.label.line1}${index}`}
+              id={`${valve.label.line1}${index}`}
+              label={valve.label}
               initPressure={valve.preset}
             />
           ))}
@@ -57,11 +86,9 @@ export function PanelPage() {
         <div className="valve-grid">
           {valveList.row2B.map((valve, index) => (
             <ValveDial
-              key={`${valve.label1}${index}`}
-              vID={`${valve.label1}${index}`}
-              label1={valve.label1}
-              label2={valve.label2}
-              color={valve.color}
+              key={`${valve.label.line1}${index}`}
+              id={`${valve.label.line1}${index}`}
+              label={valve.label}
               initPressure={valve.preset}
             />
           ))}

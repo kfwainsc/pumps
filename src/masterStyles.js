@@ -8,12 +8,14 @@
    https://coolors.co/ffebe1-77705c-e1b34f-fffdfb-c61403-3e3f3f
 */
 const colorPaletteMaster = {
-  black: "rgb(0,0,0)",
+  black: "rgba(0,0,0, 1)",
+  blackLight: "rgba(40, 40, 40, 1)",
   grayDark: "rgba(62, 63, 63, 1)",
   grayDarkLight: "rgba(72, 73, 73, 1)",
   grayGreen: "rgba(119, 112, 92, 1)",
-  grayLight: "rgb(210, 211, 213)",
-  green: "rgb(50, 164, 49)",
+  grayHighlight: "rgba(130, 130, 130, 1)",
+  grayLight: "rgba(210, 211, 213, 1)",
+  green: "rgba(50, 164, 49, 1)",
   pinkLight: "rgba(255, 235, 225, 1)",
   pinkLightFade: "rgba(255, 235, 225, .3)",
   red: "rgba(198, 20, 3, 1)",

@@ -1,0 +1,15 @@
+/***  Label.css ***/
+/* Project: Pump Panel Simulator
+   Descript: Training tool to assist in learing 
+   Created: Kendra Wainscott  2022
+
+   CSS Styles for Label Component
+   Organized by major section, then alphabetically
+*/
+
+.label-contain {
+  margin: 0.5em;
+  border: 0.5em outset var(--black);
+  border-radius: 0.5em;
+  background-color: var(--white);
+}

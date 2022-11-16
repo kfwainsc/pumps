@@ -1,0 +1,260 @@
+/***  Governor.css ***/
+/* Project: Pump Panel Simulator
+   Descript: Training tool to assist in learing 
+   Created: Kendra Wainscott  2022
+
+   CSS Styles for Governor Component
+   Organized by major section, then alphabetically
+*/
+figcaption,
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0);
+}
+/************************************************/
+.btn-all {
+  cursor: pointer;
+  width: 100%;
+  padding: 0.6em 1.2em;
+  font-size: 1.6em;
+  font-weight: 700;
+  line-height: 2em;
+  color: #ffffff;
+  border-radius: 0.5em;
+  border-width: 0 0.1em 0.2em 0;
+  border-color: rgba(0, 0, 0, 0.527);
+  transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  transition-property: color, background-color, border-color;
+}
+.btn-border {
+  display: flex;
+  border-radius: 0.5em;
+}
+.btn-border-orange {
+  margin: 0 0 1em 0;
+  background-color: rgba(171, 90, 32, 255);
+  border: 0.2em solid rgba(171, 90, 32, 255);
+}
+.btn-border-white {
+  background-color: rgb(255, 255, 255);
+  border: 0.2em solid rgb(255, 255, 255);
+}
+.btn-dec,
+.btn-inc {
+  width: 100%;
+  background-color: rgba(246, 235, 17);
+}
+.btn-dec:hover,
+.btn-inc:hover {
+  background-color: rgb(135, 135, 3);
+}
+.btn-dec {
+  padding: 1.5em 0.3em 0 0.3em;
+}
+.btn-inc {
+  padding: 0 0.3em 1.5em 0.3em;
+}
+.btn-idle {
+  background-color: rgba(196, 3, 3);
+}
+.btn-idle:hover {
+  background-color: rgba(154, 2, 2);
+}
+.btn-menu,
+.btn-silence {
+  margin: 1em;
+  padding: 1em 0.2em;
+  font-size: 1.25em;
+  background-color: rgba(46, 173, 224);
+}
+.btn-menu:hover {
+  background-color: rgb(32, 111, 142);
+}
+.btn-mode {
+  padding: 1em 0.2em;
+  border-color: rgba(8, 8, 8, 0.527);
+  background-color: rgba(16, 114, 184);
+}
+.btn-mode:hover {
+  background-color: rgb(9, 64, 104);
+}
+.btn-preset {
+  padding: 0.6em 0.7em;
+  background-color: rgba(0, 133, 67);
+}
+.btn-preset:hover {
+  background-color: rgba(3, 92, 47);
+}
+.btn-silence {
+  background-color: rgba(130, 130, 132);
+}
+.btn-silence:hover {
+  background-color: rgba(104, 104, 105);
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  /*border: 0.5em solid rgba(153, 209, 243, 0.421);*/
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+.flex-col {
+  margin: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.governor {
+  font-size: 4px;
+  max-width: 200px;
+  padding-left: 0;
+  border-radius: 1em;
+  background-color: gray;
+}
+.gov-bottom-contain {
+  display: flex;
+  border-radius: 0 0 1em 1em;
+  background-color: rgba(0, 0, 0);
+}
+.gov-left-contain {
+  padding: 1em 5em 2em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-items: space-evenly;
+  border-radius: 1em 0 0 0;
+  background-color: rgba(210, 211, 213);
+
+  /*border: solid white 0.5em;*/
+}
+.gov-right-contain {
+  padding: 4em 2em 0 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-items: space-evenly;
+  /*border: solid rgba(255, 255, 255, 0.499) 0.5em;*/
+}
+.gov-top-contain {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+}
+.intake-discharge {
+  /*width: 14em;*/
+  padding: 0 1em;
+  font-family: "digital-7";
+  font-size: 5em;
+  /*line-height: 5em;*/
+  font-weight: 500;
+  text-align: right;
+  border: solid rgba(0, 0, 0) 0.1em;
+  border-radius: 0.2em;
+  background-color: rgba(68, 14, 14);
+  color: red;
+}
+.intake-discharge-box {
+  margin: 0.5em 0;
+}
+.intake-dis-figcap {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-weight: 800;
+  text-align: center;
+}
+.intake-dis-override {
+  font-size: 3em;
+  text-align: center;
+}
+.light-checkStop {
+  background-color: rgba(86, 45, 26);
+  border: 0.3em solid rgba(146, 58, 55);
+}
+.light-contain-H {
+  margin: 0.5em 0;
+  display: flex;
+  align-items: center;
+  font-size: 0.75em;
+  font-weight: 800;
+  /*border: 2px solid rgba(128, 128, 128, 0.814);*/
+}
+.light-contain-V {
+  margin: 0.5em 0.9em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.7em;
+  font-weight: 800;
+}
+.light-check-stop {
+  color: rgba(189, 187, 94);
+}
+.light-pressure {
+  background-color: rgba(255, 255, 0);
+  border: 0.3em solid rgba(118, 103, 3);
+}
+.light-rnd {
+  display: inline;
+  /*font-size: 5px;*/
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0.1em;
+  border-radius: 50%;
+}
+.light-rpm {
+  background-color: rgba(77, 1, 1);
+  border: 0.3em solid rgba(41, 2, 2);
+}
+.light-throttle {
+  background-color: rgba(5, 215, 5);
+  border: 0.3em solid rgba(1, 118, 1);
+}
+.rpm {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: white;
+}
+.status-icons {
+  width: 1.75em;
+  filter: invert(100%);
+}
+.status-lights-contain {
+  margin: 0 0 0 2em;
+}
+.status-lights-label {
+  font-size: 0.7em;
+  color: white;
+}
+.sub-right {
+  margin: 0 0 5em 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /*border: 5px solid yellow;*/
+}
+.total-control {
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 900;
+}
+.total-control-red {
+  margin: 0 0 0 0.6em;
+  padding: 0.5em;
+  border: 0.25em solid black;
+  border-radius: 50%;
+  font-size: 1.5em;
+  font-style: none;
+  font-weight: 900;
+  color: red;
+  border-width: 0 0 0.5em 0.9em;
+}
+.TEMP-status {
+  height: 5em;
+  width: 0.7em;
+  margin: 3em 0 0.2em 0;
+  background-color: rgb(1, 104, 1);
+  border-right: 3px dashed black;
+}

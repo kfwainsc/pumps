@@ -6,79 +6,103 @@
   "valveList": {
     "row1": [
       {
-        "label1": "front crosslay",
-        "label2": "w/foam",
-        "color": "orange",
+        "label": {
+          "line1": "front crosslay",
+          "line2": "w/foam",
+          "color": "orange"
+        },
         "preset": 140
       },
       {
-        "label1": "rear crosslay",
-        "label2": "w/foam",
-        "color": "red",
+        "label": {
+          "line1": "rear crosslay",
+          "line2": "w/foam",
+          "color": "red"
+        },
         "preset": 140
       },
       {
-        "label1": "no. 3",
-        "label2": "2 1/2'' discharge",
-        "color": "brown",
+        "label": {
+          "line1": "no. 3",
+          "line2": "2 1/2'' discharge",
+          "color": "brown"
+        },
         "preset": 0
       },
       {
-        "label1": "deluge",
-        "label2": "",
-        "color": "rgb(161,61,45)",
+        "label": {
+          "line1": "deluge",
+          "line2": "",
+          "color": "rgb(161,61,45)"
+        },
         "preset": 80
       },
       {
-        "label1": "booster reel",
-        "label2": "w/foam",
-        "color": "whitesmoke",
+        "label": {
+          "line1": "booster reel",
+          "line2": "w/foam",
+          "color": "whitesmoke"
+        },
         "preset": 0
       },
       {
-        "label1": "no. 4",
-        "label2": "2 1/2'' discharge",
-        "color": "green",
+        "label": {
+          "line1": "no. 4",
+          "line2": "2 1/2'' discharge",
+          "color": "green"
+        },
         "preset": 0
       },
       {
-        "label1": "rear 2 1/2'' discharge",
-        "label2": "w/foam",
-        "color": "black",
+        "label": {
+          "line1": "rear 2 1/2'' discharge",
+          "line2": "w/foam",
+          "color": "black"
+        },
         "preset": 0
       },
       {
-        "label1": "right rear 1 1/2''",
-        "label2": "preconnect",
-        "color": "yellow",
+        "label": {
+          "line1": "right rear 1 1/2''",
+          "line2": "preconnect",
+          "color": "yellow"
+        },
         "preset": 120
       }
     ],
     "row2A": [
       {
-        "label1": "front",
-        "label2": "5'' discharge",
-        "color": "whitesmoke",
+        "label": {
+          "line1": "front",
+          "line2": "5'' discharge",
+          "color": "whitesmoke"
+        },
         "preset": 0
       },
       {
-        "label1": "no. 1",
-        "label2": "2 1/2'' discharge",
-        "color": "purple",
+        "label": {
+          "line1": "no. 1",
+          "line2": "2 1/2'' discharge",
+          "color": "purple"
+        },
         "preset": 0
       }
     ],
     "row2B": [
       {
-        "label1": "no. 1",
-        "label2": "2 1/2'' discharge",
-        "color": "blue",
+        "label": {
+          "line1": "no. 1",
+          "line2": "2 1/2'' discharge",
+          "color": "blue"
+        },
         "preset": 0
       },
       {
-        "label1": "right rear",
-        "label2": "2 1/2'' preconnect",
-        "color": "white",
+        "label": {
+          "line1": "right rear",
+          "line2": "2 1/2'' preconnect",
+          "color": "white"
+        },
         "preset": 70
       }
     ]

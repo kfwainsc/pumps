@@ -7,6 +7,7 @@ import React, {useState} from "react";
 //functional components
 import {ControlBtns} from "./ControlBtns";
 import {FlowRead} from "./FlowRead";
+import {Label} from "../Label/Label";
 import {Position} from "./Position";
 import {PressureRead} from "./PressureRead";
 //decorative components
@@ -16,21 +17,21 @@ import {valveDialStyles as s} from "./stylesValveDial";
 import "./ValveDial.css";
 
 // SCALE UP & DOWN //
-export function ValveDial({vID, label1, label2, color, initPressure}) {
+export function ValveDial({id, label, initPressure}) {
   const [isBig, setIsBig] = useState(false);
   function scaleUpClick() {
     if (!isBig) {
-      document.getElementById(vID).style.fontSize = "10px";
-      document.getElementById(vID).style.cursor = "auto";
-      document.getElementById(`${vID}minimize`).style.display = "inline-block";
+      document.getElementById(`contain${id}`).style.fontSize = "10px";
+      document.getElementById(`contain${id}`).style.cursor = "auto";
+      document.getElementById(`minimize${id}`).style.display = "inline-block";
       setIsBig(true);
     }
   }
   function scaleDownClick({target}) {
     if (isBig) {
       target.style.display = "none";
-      document.getElementById(vID).style.fontSize = "4px";
-      document.getElementById(vID).style.cursor = "pointer";
+      document.getElementById(`contain${id}`).style.fontSize = "4px";
+      document.getElementById(`contain${id}`).style.cursor = "pointer";
       setIsBig(false);
     }
   }
@@ -49,19 +50,10 @@ export function ValveDial({vID, label1, label2, color, initPressure}) {
   }
 
   return (
-    <div id={vID} onClick={scaleUpClick} style={s.valveContain} className="flex-column">
+    <div id={`contain${id}`} onClick={scaleUpClick} style={s.valveContain} className="flex-column">
       <div className="flex">
-        <div
-          style={{borderColor: `${color}`, backgroundColor: "white"}}
-          className="valve-label-contain"
-        >
-          <label style={s.valveLabel}>
-            {label1}
-            <br></br>
-            {label2}
-          </label>
-        </div>
-        <button id={`${vID}minimize`} style={s.minimize} onClick={scaleDownClick}>
+        <Label label={label} />
+        <button id={`minimize${id}`} style={s.minimize} onClick={scaleDownClick}>
           X
         </button>
       </div>
@@ -81,3 +73,15 @@ export function ValveDial({vID, label1, label2, color, initPressure}) {
     </div>
   );
 }
+/*
+        <div
+          style={{borderColor: `${color}`, backgroundColor: "white"}}
+          className="valve-label-contain"
+        >
+          <label style={s.valveLabel}>
+            {label1}
+            <br></br>
+            {label2}
+          </label>
+        </div>
+*/

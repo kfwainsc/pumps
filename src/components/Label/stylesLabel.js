@@ -15,6 +15,7 @@ const innerLabel = {
   margin: 0,
   padding: "0 1em",
   textAlign: "center",
+  textTransform: "uppercase",
   border: `solid .2em ${c.whiteAbsolute}`,
   borderRadius: ".5em",
   backgroundColor: c.white,

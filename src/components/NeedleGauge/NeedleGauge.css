@@ -1,0 +1,31 @@
+/***  NeedleGauge.css ***/
+/* Project: Pump Panel Simulator
+   Descript: Training tool to assist in learing 
+   Created: Kendra Wainscott  2022
+
+   CSS Styles for NeedleGauge component
+   Organized by major section, then alphabetically
+*/
+
+.gauge-img {
+  /*  position: absolute;
+  z-index: 1;*/
+  width: 5rem;
+}
+.needle {
+  /*position: absolute;
+  z-index: 2;*/
+  color: var(--yellow);
+  transform: rotate(-30deg);
+}
+.needle-contain {
+  /*position: relative;*/
+  margin: 0 0 2rem 0;
+  border: solid 1em var(--grayDark);
+  border-radius: 50%;
+  background-image: "cover";
+}
+.needle-gauge-contain {
+  font-size: 4px;
+  margin: 0 4rem 3rem 4rem;
+}

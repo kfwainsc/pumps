@@ -1,20 +1,18 @@
-/*** Label.js <Lable /> ***/
+/*** Label.js <Lable {label: color, line1, line2}/> ***/
 /* Project: Pump Panel Simulator
    Descript: Training tool to assist in learing 
    Created: Kendra Wainscott  2022
 */
 import {labelStyles as s} from "./stylesLabel.js";
+import "./Label.css";
 
-export function Label({line1, line2, color}) {
+export function Label({label}) {
   return (
-    <div
-      style={{borderColor: `${color}`, backgroundColor: "white"}}
-      className="valve-label-contain"
-    >
+    <div style={{borderColor: `${label.color}`}} className="label-contain">
       <label style={s.innerLabel}>
-        {line1}
+        {label.line1}
         <br></br>
-        {line2}
+        {label.line2}
       </label>
     </div>
   );
