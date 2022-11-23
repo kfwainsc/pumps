@@ -9,6 +9,7 @@ import {Routes, Route} from "react-router-dom";
 import {HookUps} from "../components/HookUps/HookUps";
 import {InCab} from "../components/InCab/InCab";
 import {NavBar} from "../components/NavBar/NavBar";
+import {PreConnects} from "../components/PreConnects/PreConnects";
 //pages
 import {LandingPage} from "../pages/LandingPage/LandingPage";
 import {PanelPage} from "../pages/PanelPage/PanelPage";
@@ -23,6 +24,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/check_list" element={<InCab />} />
+        <Route path="/preconnects" element={<PreConnects />} />
         <Route path="/panel_page" element={<PanelPage />} />
       </Routes>
     </div>

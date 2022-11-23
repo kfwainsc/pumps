@@ -34,6 +34,13 @@ export function NavBar() {
             Pre-Pump Checklist
           </NavDropdown.Item>
           <NavDropdown.Item
+            key={"dropdown_preconnects"}
+            href="/preconnects"
+            style={styles.navDropdownItem}
+          >
+            Pre-Connects
+          </NavDropdown.Item>
+          <NavDropdown.Item
             key={"dropdown_panelpage"}
             href="/panel_page"
             style={styles.navDropdownItem}

@@ -8,7 +8,7 @@
       "label": {
         "line1": "booster reel",
         "line2": "rewind",
-        "borderColor": "white"
+        "color": "white"
       }
     },
     "rowOf3": [
@@ -16,21 +16,21 @@
         "label": {
           "line1": "left",
           "line2": "scene light",
-          "borderColor": "black"
+          "color": "black"
         }
       },
       {
         "label": {
           "line1": "panel",
           "line2": "light",
-          "borderColor": "black"
+          "color": "black"
         }
       },
       {
         "label": {
           "line1": "right",
           "line2": "scene light",
-          "borderColor": "black"
+          "color": "black"
         }
       }
     ]

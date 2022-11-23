@@ -1,23 +1,23 @@
-/*** ValveDial.js  <ValveDial {id, initPressure, label{color, line1, line2} /> ***/
+/*** IntakeValveDial.js  <IntakeValveDial {id, label{color, line1, line2} } /> ***/
 /* Project: Pump Panel Simulator
    Descript: Training tool to assist in learing 
    Created: Kendra Wainscott  2022
 */
 import React, {useState} from "react";
 //functional components
-import {ControlBtns} from "./ControlBtns";
-import {FlowRead} from "./FlowRead";
+import {ControlBtns} from "../ValveDial/ControlBtns";
+import {FlowRead} from "../ValveDial/FlowRead";
 import {Label} from "../Label/Label";
-import {Position} from "./Position";
-import {PressureRead} from "./PressureRead";
+import {Position} from "../ValveDial/Position";
+import {PressureRead} from "../ValveDial/PressureRead";
 //decorative components
-import {Screws} from "./Screws";
+import {Screws} from "../ValveDial/Screws";
 //styles
 import {valveDialStyles as s} from "./stylesValveDial";
-import "./ValveDial.css";
+import "../ValveDial/ValveDial.css";
 
 // SCALE UP & DOWN //
-export function ValveDial({id, initPressure, label}) {
+export function IntakeValveDial({id, label}) {
   const [isBig, setIsBig] = useState(false);
   function scaleUpClick() {
     if (!isBig) {
@@ -37,10 +37,6 @@ export function ValveDial({id, initPressure, label}) {
   }
 
   //  CONTROL BUTTON ONCLICKS  //
-  const [pressure, setPressure] = useState("_");
-  function doPreset() {
-    isBig && setPressure(initPressure);
-  }
   const [flow, setFlow] = useState("_");
   function openValve() {
     isBig && setFlow("random");
@@ -73,15 +69,3 @@ export function ValveDial({id, initPressure, label}) {
     </div>
   );
 }
-/*
-        <div
-          style={{borderColor: `${color}`, backgroundColor: "white"}}
-          className="valve-label-contain"
-        >
-          <label style={s.valveLabel}>
-            {label1}
-            <br></br>
-            {label2}
-          </label>
-        </div>
-*/

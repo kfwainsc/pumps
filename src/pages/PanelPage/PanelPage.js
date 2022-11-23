@@ -10,6 +10,8 @@ import {Link} from "react-router-dom";
 import {BlackBtn} from "../../components/BlackBtn/BlackBtn";
 import {Governor} from "../../components/Governor/Governor";
 import {HookUps} from "../../components/HookUps/HookUps";
+import {OkayToPumpLight} from "../../components/OkToPumpLight/OkToPumpLight";
+import {OverHeatLight} from "../../components/OverHeatLight/OverHeatLight";
 import {NeedleGauge} from "../../components/NeedleGauge/NeedleGauge";
 import {ValveDial} from "../../components/ValveDial/ValveDial";
 
@@ -26,7 +28,12 @@ const valveList = valveListData.valveList;
 
 export function PanelPage() {
   return (
+    // BOOSTER REEL COMPONENT /////////////
     <div style={s.stainlessContain}>
+      <div className="flex" style={s.okWarnLightsContain}>
+        <OkayToPumpLight id="okToPumpLightID" />
+        <OverHeatLight id="overHeatLightID" />
+      </div>
       <div className="temp-top-row">
         <BlackBtn
           id={`btnID${blackBtnList.booster.label.line1}`}
@@ -36,7 +43,7 @@ export function PanelPage() {
           <img src={require("../../images/governor_imgs/govPreview.png")} />
         </a>
         <div>
-          <div className="flex">
+          <div style={s.needleDialContain}>
             {needleGaugeList.map((gauge, index) => (
               <NeedleGauge
                 id={`needleGaugeID${gauge.label.line1}${index}`}

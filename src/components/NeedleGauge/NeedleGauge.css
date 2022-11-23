@@ -10,7 +10,8 @@
 .gauge-img {
   /*  position: absolute;
   z-index: 1;*/
-  width: 5rem;
+  width: 6em;
+  height: 6em;
 }
 .needle {
   /*position: absolute;
@@ -20,12 +21,14 @@
 }
 .needle-contain {
   /*position: relative;*/
-  margin: 0 0 2rem 0;
+  width: 6em;
+  margin: 0 0 2em 0;
+  padding: 0;
   border: solid 1em var(--grayDark);
   border-radius: 50%;
   background-image: "cover";
 }
 .needle-gauge-contain {
   font-size: 4px;
-  margin: 0 4rem 3rem 4rem;
+  margin: 0 4em 3em 4em;
 }

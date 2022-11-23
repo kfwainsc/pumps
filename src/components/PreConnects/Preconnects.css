@@ -1,0 +1,37 @@
+/***  PreConnects.css ***/
+/* Project: Pump Panel Simulator
+   Descript: Training tool to assist in learing 
+   Created: Kendra Wainscott  2022
+
+   CSS Styles for PreConnects component
+   Organized by major section, then alphabetically
+*/
+.area-contain {
+  margin: 3rem;
+  padding: 3rem;
+  border: 0.4rem double var(--grayDark);
+  color: var(--grayDark);
+}
+.area-header {
+  margin: 0 0 2rem 0;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--grayDark);
+}
+.line-contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.hose-header {
+  margin: 1rem;
+}
+.hose-header h4 {
+  font-weight: 600;
+}
+.nozzle-img {
+  width: 10rem;
+  filter: opacity(0.7);
+}
