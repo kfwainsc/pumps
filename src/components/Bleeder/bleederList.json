@@ -1,0 +1,75 @@
+{
+  "FileName": "bleederList.json",
+  "Project": "Pump Panel Simulator",
+  "Descript": "Training tool to assist in learing",
+  "Created": "Kendra Wainscott 2022",
+  "bleederList": {
+    "row1": [
+      {
+        "label": {
+          "line1": "no.1   2 1/2'' ",
+          "line2": "discharge bleeder",
+          "color": "orange"
+        }
+      },
+      {
+        "label": {
+          "line1": "booster reel",
+          "line2": "wt foam bleeder",
+          "color": "white"
+        }
+      },
+      {
+        "label": {
+          "line1": "no.2   2 1/2'' ",
+          "line2": "discharge bleeder",
+          "color": "blue"
+        }
+      },
+      {
+        "label": {
+          "line1": "right rear 1 1/2'' ",
+          "line2": "preconnect bleeder",
+          "color": "brown"
+        }
+      }
+    ],
+    "row2": [
+      {
+        "label": {
+          "line1": "left 2 1/2'' ",
+          "line2": "intake bleeder",
+          "color": "blue"
+        }
+      },
+      {
+        "label": {
+          "line1": "front",
+          "line2": "crosslay bleeder",
+          "color": "yellow"
+        }
+      },
+      {
+        "label": {
+          "line1": "rear crosslay",
+          "line2": "bleeder",
+          "color": "white"
+        }
+      },
+      {
+        "label": {
+          "line1": "rear 2 1/2'' ",
+          "line2": "discharge bleeder",
+          "color": "black"
+        }
+      },
+      {
+        "label": {
+          "line1": "left rear 1 1/2'' ",
+          "line2": "preconnect bleeder",
+          "color": "pink"
+        }
+      }
+    ]
+  }
+}

@@ -21,7 +21,7 @@ const btn = {
   background: `radial-gradient(circle, ${c.grayHighlight} 0%, ${c.grayDark} 58%)`,
 };
 const btnBorder = {
-  margin: 0,
+  margin: "0 0 .5em 0",
   padding: 0,
   borderRadius: "50%",
   border: `.5em solid ${c.black}`,

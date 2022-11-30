@@ -8,11 +8,12 @@ import {Link} from "react-router-dom";
 
 //components
 import {BlackBtn} from "../../components/BlackBtn/BlackBtn";
+import {Bleeder} from "../../components/Bleeder/Bleeder";
 import {Governor} from "../../components/Governor/Governor";
 import {HookUps} from "../../components/HookUps/HookUps";
+import {NeedleGauge} from "../../components/NeedleGauge/NeedleGauge";
 import {OkayToPumpLight} from "../../components/OkToPumpLight/OkToPumpLight";
 import {OverHeatLight} from "../../components/OverHeatLight/OverHeatLight";
-import {NeedleGauge} from "../../components/NeedleGauge/NeedleGauge";
 import {ValveDial} from "../../components/ValveDial/ValveDial";
 
 //styles
@@ -23,9 +24,10 @@ import "./panelPage.css";
 import {needleGaugeList} from "../../components/NeedleGauge/needleGaugeList";
 const blackBtnData = require("../../components/BlackBtn/blackBtnList.json");
 const blackBtnList = blackBtnData.btnList;
+const bleederData = require("../../components/Bleeder/bleederList.json");
+const bleederList = bleederData.bleederList;
 const valveListData = require("../../components/ValveDial/valveList.json");
 const valveList = valveListData.valveList;
-
 export function PanelPage() {
   return (
     // BOOSTER REEL COMPONENT /////////////
@@ -100,6 +102,24 @@ export function PanelPage() {
             />
           ))}
         </div>
+      </div>
+      <div className="flex">
+        {bleederList.row1.map((bleeder, index) => (
+          <Bleeder
+            label={bleeder.label}
+            id={`${bleeder.label.line1}${index}row1ID`}
+            key={`${bleeder.label.line1}${index}row1Key`}
+          />
+        ))}
+      </div>
+      <div className="flex">
+        {bleederList.row2.map((bleeder, index) => (
+          <Bleeder
+            label={bleeder.label}
+            id={`${bleeder.label.line1}${index}row2ID`}
+            key={`${bleeder.label.line1}${index}row2Key`}
+          />
+        ))}
       </div>
     </div>
   );

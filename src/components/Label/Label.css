@@ -8,7 +8,7 @@
 */
 
 .label-contain {
-  margin: 0.5em;
+  /*margin: 0.5em;*/
   border: 0.5em outset var(--black);
   border-radius: 0.5em;
   background-color: var(--white);

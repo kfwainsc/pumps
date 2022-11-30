@@ -15,6 +15,7 @@ const allLightsContain = {
   alignItems: "flex-end",
 };
 const blackBox = {
+  margin: ".7em 0 0 0",
   padding: "1em .5em",
   borderRadius: "3em",
   backgroundImage: `url(${require("../../images/blkMetal.jpg")})`,

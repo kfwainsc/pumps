@@ -4,10 +4,55 @@
   "Descript": "Training tool to assist in learing",
   "Created": "Kendra Wainscott 2022",
   "valveList": {
-    "label": {
-      "line1": "booster reel",
-      "line2": "rewind",
-      "borderColor": "white"
-    }
+    "row1A": [
+      {
+        "label": {
+          "line1": "left",
+          "line2": "5'' intake",
+          "color": "white"
+        }
+      }
+    ],
+    "row1B": [
+      {
+        "label": {
+          "line1": "right",
+          "line2": "5'' intake",
+          "color": "white"
+        }
+      }
+    ],
+    "row2A": [
+      {
+        "label": {
+          "line1": "right",
+          "line2": "2 1/2'' intake",
+          "color": "white"
+        }
+      },
+      {
+        "label": {
+          "line1": "left",
+          "line2": "2 1/2'' intake",
+          "color": "white"
+        }
+      }
+    ],
+    "row2B": [
+      {
+        "label": {
+          "line1": "tank",
+          "line2": "fill",
+          "color": "white"
+        }
+      },
+      {
+        "label": {
+          "line1": "rear",
+          "line2": "5'' intake",
+          "color": "white"
+        }
+      }
+    ]
   }
 }
